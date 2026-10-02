@@ -11,6 +11,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://kit.fontawesome.com/8637623a5e.js" crossorigin="anonymous"></script>
+		<script>
+			const cvPdf = "images/CV Christian Sandberg 2026-10-02.pdf";
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -19,8 +22,7 @@
 				<header>
 					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
 					<h1 id="logo"><a href="#">Christian Sandberg</a></h1>
-					<p>Hands-on project manager specializing in
-					Treasury, Data Warehousing and Customer Analytics</p>
+					<p>Hands-on project manager specializing in Banking. Experience from Financing, Customer Analytics, Data Warehousing, Treasury, Risk, and Regulatory Reporting.<a data-cv-link href="#" target="_blank">CV</a></p>
 				</header>
 				<nav id="nav">
 					<ul>
@@ -32,7 +34,7 @@
 				<footer>
 					<ul class="icons">
 						<li><a href="https://www.linkedin.com/in/c-sandberg-consulting/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="images/CV Christian Sandberg 2026-10-02.pdf" class="icon solid fa-envelope-open-text" target="_blank"><span class="label">CV</span></a></li>
+						<li><a data-cv-link href="#" class="icon solid fa-envelope-open-text" target="_blank"><span class="label">CV</span></a></li>
 						<li><a href="mailto:contact@christiansandberg.fi" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						<li><a href="https://github.com/llego" target="_blank" class="icon brands fa-github"><span class="label">Github</span></a></li>
 					</ul>
@@ -53,7 +55,7 @@
 								<div class="container">
 									<header class="major">
 										<h2>Hello!</h2>
-										<p>I'm a hands-on project manager with 16 years of experience in Banking, working with projects in Financing, Customer Analytics, Data Warehousing, Treasury, Risk, and Regulatory Reporting.</p>
+										<p>I'm a hands-on project manager with 16 years of experience in Banking, working with projects in Financing, Customer Analytics, Data Warehousing, Treasury, Risk, and Regulatory Reporting. <a data-cv-link href="#" target="_blank">Download my CV</a></p>
 									</header>
 									<p>I have helped big international banks, mid-sized banks, savings banks, and specialized banks with diverse topics. I’m at my best in a project where data is refined into something useful. Project management, data architecture design (especially data mesh), data analysis, data modeling, data engineering, and system integration are very familiar activities.</p>
 									<p>As a goal-oriented person I take pride in delivering complex projects – just ask any of the steering groups of my previous projects. Technical project staff appreciate my technical understanding, while business-oriented stakeholders appreciate my ability to communicate clearly and understandably. I genuinely believe that implementing BCBS239 principles make the data architecture cooler, and improve the day-to-day lives of employees.</p>
@@ -66,7 +68,7 @@
 							<section id="two">
 								<div class="container">
 									<h3>Profile</h3>
-									<p>Here are a few bulletpoints to provide an outline of my profile. Please see <a href="images/CV Christian Sandberg 2026-10-02.pdf" target="_blank">my CV (click here)</a> and my <a href="https://www.linkedin.com/in/c-sandberg-consulting/" target="_blank">LinkedIn profile</a> for a record of my experience.</p>
+									<p>Here are a few bulletpoints to provide an outline of my profile. Please see <a data-cv-link href="#" target="_blank">my CV (click here)</a>y and my <a href="https://www.linkedin.com/in/c-sandberg-consulting/" target="_blank">LinkedIn profile</a> for a record of my experience.</p>
 									<ul class="feature-icons">
 										<li class="icon solid fa-money-bill">Deep understanding of the banking business; especially retail banking products and retail customers.</li>
 										<li class="icon solid fa-house">I have worked with banks such as OP Group, Nordea, WiZink (Spain), POP Pankki, Säästöpankki, and Aktia.</li>
@@ -501,6 +503,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</div>
 
 		<!-- Scripts -->
+			<script>
+				document.querySelectorAll("[data-cv-link]").forEach((link) => {
+					link.href = cvPdf;
+				});
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
